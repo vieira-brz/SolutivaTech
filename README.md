@@ -1,4 +1,4 @@
-# <img src="https://avatars.githubusercontent.com/u/172913867?s=200&v=4" width="50" /> SolutivaTech
+# <p style="text-align:center;"><img src="https://avatars.githubusercontent.com/u/172913867?s=200&v=4" width="50" /> SolutivaTech</p>
 
 ## Descrição
 
@@ -14,7 +14,7 @@ O nome "SolutivaTech" combina a ideia de soluções efetivas ("Solutiva") com a 
 
 ## Valores
 
-- Compromisso com o cliente
-- Reconhecimento
-- Respeito
-- Diversidade
+- 🤝🏻 Compromisso com o cliente
+- 🏆 Reconhecimento
+- 🌟 Respeito
+- 🌍 Diversidade
