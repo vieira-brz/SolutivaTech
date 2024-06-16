@@ -8,7 +8,7 @@ O nome "SolutivaTech" combina a ideia de soluções efetivas ("Solutiva") com a 
 
 ## Cores
 
-- Amarelo
+- Roxo
 - Branco
 - Preto
 
