@@ -1,4 +1,4 @@
-# SolutivaTech
+# <img src="https://avatars.githubusercontent.com/u/172913867?s=200&v=4" width="50" /> SolutivaTech
 
 ## Descrição
 
