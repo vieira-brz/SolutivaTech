@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Globais Adicionais */
+body {
+  @apply bg-white text-gray-900;
+}
+
+/* 
+
+Navbar items
+
+*/
+.nav-link {
+  @apply relative hover:text-primary-dark transition-all duration-300;
+}
+
+.nav-link span {
+  @apply block absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover span {
+  @apply w-full;
+}
