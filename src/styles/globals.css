@@ -4,6 +4,7 @@
 
 /* Estilos Globais Adicionais */
 body {
+  overflow-x: hidden;
   @apply bg-white text-gray-900;
 }
 

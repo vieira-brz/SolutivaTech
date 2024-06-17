@@ -11,15 +11,19 @@
   "dependencies": {
     "@iconify/react": "^5.0.1",
     "@next/font": "^14.2.4",
+    "@react-three/drei": "^9.107.0",
+    "@react-three/fiber": "^8.16.8",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
+    "three": "^0.165.0",
     "ui": "github:shadcn/ui"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.165.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
