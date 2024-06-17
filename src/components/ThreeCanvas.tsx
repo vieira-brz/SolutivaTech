@@ -5,15 +5,15 @@ import { OrbitControls, Stars, useTexture, MeshDistortMaterial } from '@react-th
 import * as THREE from 'three';
 
 const TexturedSphere = () => {
-    const mesh = useRef();
-
+    const mesh = useRef<THREE.Mesh>(null);
     const texture = useTexture('/images/logo.png');
 
-    // Configurar a repetição das texturas
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 
-    useFrame(() => {
-        mesh.current.rotation.y = 5.5;
+    useFrame((state, delta) => {
+        if (mesh.current) {
+            mesh.current.rotation.y = 5.5;
+        }
     });
 
     return (
@@ -23,15 +23,14 @@ const TexturedSphere = () => {
                 map={texture}
                 distort={1}
                 speed={2}
-                roughness={0.1}
-                displacementScale={.1}
+                roughness={0.5}
+                displacementScale={0.1}
                 normalMap={texture}
                 displacementMap={texture}
-                metalness={0.2}    
-                emissive={new THREE.Color(0x0F043D)}  
+                metalness={0.2}
+                emissive={new THREE.Color(0x0F043D)}
                 envMapIntensity={0.8}
             />
-
         </mesh>
     );
 };
