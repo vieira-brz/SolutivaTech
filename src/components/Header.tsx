@@ -16,7 +16,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-white pl-1 py-1 px-8 flex justify-between shadow relative">
+        <header className="bg-white pl-1 py-1 px-8 flex justify-between shadow sticky top-0" id="zidx-5">
             <div className="flex place-items-center font-bold tracking-wide">
                 <Image src="/images/logo.png" alt="Solutiva Tech" width={60} height={60} />
                 <h3 className='text-primary-dark'>Solutiva</h3><h3 className='text-gray-600'>Tech</h3>

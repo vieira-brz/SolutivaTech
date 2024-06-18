@@ -2,8 +2,8 @@ import ThreeCanvas from './ThreeCanvas';
 
 const HeroSection = () => {
     return (
-        <section className="flex flex-col md:flex-row h-screen">
-            <div className="w-full md:w-1/2 h-[full - 1] flex items-center justify-center mt-1 md:mt-0">
+        <section className="flex flex-col md:flex-row h-screen p-1" id="zidx-4">
+            <div className="w-full md:w-1/2 h-[full - 1] flex items-center justify-center md:mt-0">
                 <ThreeCanvas />
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-8 bg-white">
