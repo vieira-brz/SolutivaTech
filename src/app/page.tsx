@@ -1,12 +1,14 @@
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
+import About from '@/components/About';
 
 const Home = () => {
   return (
     <div>
       <Header />
       <HeroSection />
+      <About />
       <Footer />
     </div>
   );
