@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-#zidx-2 {
+.zidx-2 {
   z-index: 2;
 }
 
-#zidx-3 {
+.zidx-3 {
   z-index: 3;
 }
 
-#zidx-4 {
+.zidx-4 {
   z-index: 4;
 }
 
-#zidx-5 {
+.zidx-5 {
   z-index: 5;
 }
 
