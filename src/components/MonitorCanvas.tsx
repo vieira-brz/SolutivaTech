@@ -22,9 +22,9 @@ const MonitorCanvas = () => {
 
     return (
         // Todo: hover no monitor, tour pela imagem, etc...
-        
-        <div className='md:block hidden'>
-            <Canvas>
+
+        <div className='relative md:block hidden zidx-3'>
+            <Canvas camera={{ position: [0, 0, 7], fov: 50 }}>
                 <ambientLight intensity={2} />
                 <directionalLight position={[2, 5, 2]} />
                 <OrbitControls enableZoom={true} enableRotate={true} />

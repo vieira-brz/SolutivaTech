@@ -1,5 +1,7 @@
+import { Icon } from '@iconify/react/dist/iconify.js';
 import MonitorCanvas from './MonitorCanvas';
 import ThreeCanvas from './ThreeCanvas';
+import Image from 'next/image';
 
 const HeroSection = () => {
     return (
@@ -8,9 +10,15 @@ const HeroSection = () => {
                 <ThreeCanvas />
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-8 bg-white">
-                <h1 className="text-3xl md:text-4xl font-bold mb-5 text-gray-500">Bem-vindo à</h1>
+                <h1 className="text-3xl md:text-4xl font-bold mb-5 text-gray-500 md:-mt-12">Bem-vindo à</h1>
 
-                <MonitorCanvas />
+                <div className='relative md:block hidden'>
+                    <div className='text-[10px] flex items-center gap-1 absolute -right-8 group zidx-4'>
+                        <Icon icon="material-symbols:info-outline" width={22} />
+                        <p className='group-hover:block hidden w-max absolute p-2 rounded bg-gray-300 -bottom-10 -left-9 shadow'>Imagem interativa</p>
+                    </div>
+                    <MonitorCanvas />
+                </div>
 
                 <div className='flex mb-5 text-6xl md:text-7xl font-bold'>
                     <h1 className='text-primary-dark'>Solutiva</h1>
@@ -21,6 +29,8 @@ const HeroSection = () => {
                     SolutivaTech é uma empresa focada em fornecer soluções inovadoras e abrangentes no campo da tecnologia da informação.
                     Com um compromisso com a excelência financeira.
                 </p>
+
+                <Image src={'/images/mouse.gif'} alt='Animação mouse rolando...' width={24} height={24} />
             </div>
         </section>
     );

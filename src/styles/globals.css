@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.zidx-1 {
+  z-index: 1;
+}
+
 .zidx-2 {
   z-index: 2;
 }
@@ -18,11 +22,19 @@
   z-index: 5;
 }
 
+/* 
 
-/* Estilos Globais Adicionais */
+  Estilos Globais Adicionais
+  
+*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  max-width: 1360px;
   overflow-x: hidden;
-  @apply bg-white text-gray-900;
+  @apply bg-white text-gray-900 mx-auto;
 }
 
 .bg-glass {
@@ -34,7 +46,9 @@ body {
 
 
 /* 
-Navbar items
+  
+  Navbar items
+
 */
 .nav-link {
   @apply relative hover:text-primary-dark transition-all duration-300;
@@ -46,4 +60,14 @@ Navbar items
 
 .nav-link:hover span {
   @apply w-full;
+}
+
+
+/* 
+
+  About
+
+*/
+.about-icons {
+  @apply w-10 h-10 border-primary shadow-md border p-2 rounded-full cursor-pointer bg-gray-400 hover:bg-gray-700 hover:scale-110 transition-all flex items-center justify-center;
 }
