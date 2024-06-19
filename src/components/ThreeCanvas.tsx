@@ -45,7 +45,7 @@ const ThreeCanvas = () => {
             <directionalLight position={[5, 5, 5]} intensity={1} />
             <pointLight position={[-10, -10, -10]} intensity={0.5} />
             <TexturedSphere />
-            <OrbitControls enableZoom={true} />
+            <OrbitControls enableZoom={false} enableRotate={true} />
             <Stars />
         </Canvas>
     );
