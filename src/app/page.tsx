@@ -1,7 +1,8 @@
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import Footer from '../components/Footer';
-import About from '../components/About';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import Footer from '@/components/Footer';
+import About from '@/components/About';
+import Services from '@/components/Services';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <HeroSection />
       <About />
+      <Services />
       <Footer />
     </div>
   );
