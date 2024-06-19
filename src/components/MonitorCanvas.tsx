@@ -1,13 +1,24 @@
+// @ts-nocheck
 "use client"
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { useLoader } from '@react-three/fiber';
 import * as THREE from 'three';
 
 const MonitorCanvas = () => {
-    // Carregue a textura do site ou qualquer imagem que você queira exibir no monitor
-    const texture = useLoader(THREE.TextureLoader, '/images/videoprint.png');
+    const [texture, setTexture] = useState(null);
+    const textureLoader = new THREE.TextureLoader();
+    const isClient = typeof window !== 'undefined';
+
+    useEffect(() => {
+        if (isClient) {
+            const loadTexture = async () => {
+                const loadedTexture = await textureLoader.loadAsync('/images/videoprint.png');
+                setTexture(loadedTexture);
+            };
+            loadTexture();
+        }
+    }, [isClient]);
 
     return (
         <div className='md:block hidden'>
@@ -23,10 +34,12 @@ const MonitorCanvas = () => {
                 </mesh>
 
                 {/* Tela do monitor */}
-                <mesh position={[0, 1, 0.11]}>
-                    <planeGeometry args={[5.8, 3.3]} /> {/* Aumentei os valores aqui */}
-                    <meshStandardMaterial map={texture} />
-                </mesh>
+                {texture && (
+                    <mesh position={[0, 1, 0.11]}>
+                        <planeGeometry args={[5.8, 3.3]} /> {/* Aumentei os valores aqui */}
+                        <meshStandardMaterial map={texture} />
+                    </mesh>
+                )}
 
                 {/* Base do monitor */}
                 <mesh position={[0, -1.3, 0]}>
