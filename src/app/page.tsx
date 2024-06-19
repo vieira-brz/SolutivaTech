@@ -5,7 +5,7 @@ import About from '../components/About';
 
 const Home = () => {
   return (
-    <div>
+    <div className='flex flex-col gap-0'>
       <Header />
       <HeroSection />
       <About />

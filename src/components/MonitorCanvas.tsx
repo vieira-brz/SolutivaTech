@@ -21,11 +21,13 @@ const MonitorCanvas = () => {
     }, [isClient]);
 
     return (
+        // Todo: hover no monitor, tour pela imagem, etc...
+        
         <div className='md:block hidden'>
             <Canvas>
                 <ambientLight intensity={2} />
                 <directionalLight position={[2, 5, 2]} />
-                <OrbitControls enableZoom={false} enableRotate={true} />
+                <OrbitControls enableZoom={true} enableRotate={true} />
 
                 {/* Corpo do monitor */}
                 <mesh position={[0, 1, 0]}>
